@@ -4,11 +4,11 @@ Briefly describe your app here.
 
 ## Authors
 
-FirstName LastName ([your_email@berkeley.edu](mailto:your_email@berkeley.edu))
+FirstName LastName ([yanrong.li@berkeley.edu](mailto:yanrong.li@berkeley.edu))
 
 ## Demo Video
 
-See [your demo video title here] (https://link_to_your_video)
+See [your demo video title here] (https://youtu.be/gkHN6JgyHXU)
 
 ## Screenshots
 
