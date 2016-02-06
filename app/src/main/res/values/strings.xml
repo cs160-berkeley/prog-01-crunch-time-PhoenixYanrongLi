@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CS260A_P1</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="exercise_names">
+        <item>Push-up</item>
+        <item>Sit-up</item>
+        <item>Squats</item>
+        <item>Leg-lift</item>
+        <item>Plank</item>
+        <item>Jumping Jacks</item>
+        <item>Pullup</item>
+        <item>Cycling</item>
+        <item>Walking</item>
+        <item>Jogging</item>
+        <item>Swimming</item>
+        <item>Stair-Climbing</item>
+    </string-array>
+</resources>

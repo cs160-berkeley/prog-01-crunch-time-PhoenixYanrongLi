@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.yanrongli.cs260a_p1.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TabHost
+        android:id="@+id/tabHost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <include
+                    android:id="@+id/layout_e2c"
+                    layout="@layout/layout_e2c"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </include>
+
+                <include
+                    android:id="@+id/layout_c2e"
+                    layout="@layout/layout_c2e"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </include>
+
+                <include
+                    android:id="@+id/layout_e2e"
+                    layout="@layout/layout_e2e"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </include>
+
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_marginBottom="-5dp"
+                android:background="#ff0000">
+            </TabWidget>
+
+        </LinearLayout>
+    </TabHost>
+</RelativeLayout>

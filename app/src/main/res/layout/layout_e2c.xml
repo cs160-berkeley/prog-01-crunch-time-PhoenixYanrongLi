@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:fillViewport="true">
+<RelativeLayout
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <TextView
+        android:id="@+id/e2c_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exercise to Calories"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+
+
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/e2c_editText"
+        android:hint="Enter a number"
+        android:textSize="18dp"
+        android:layout_below="@+id/e2c_text1"
+        android:layout_alignStart="@+id/e2c_text1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="-42dp"/>
+
+    <RadioGroup
+        android:id="@+id/e2c_radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/e2c_editText"
+        android:layout_toEndOf="@+id/e2c_editText"
+        android:layout_marginTop="5dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="rep"
+            android:textSize="18dp"
+            android:id="@+id/e2c_radrep"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="min"
+            android:textSize="18dp"
+            android:id="@+id/e2c_radmin"
+            android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="of"
+        android:id="@+id/e2c_text2"
+        android:layout_toEndOf="@+id/e2c_radioGroup1"
+        android:layout_alignTop="@id/e2c_editText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="9dp"
+        android:textColor="#000000"
+        android:textSize="18dp" />
+
+
+
+    <com.example.yanrongli.cs260a_p1.RadioGridGroup
+        android:id="@+id/e2c_radioGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e2c_editText"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="10dp">
+
+        <TableRow
+            android:layout_marginTop="0dp">
+
+            <RadioButton
+                android:id="@+id/e2c_rad1"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Push-up" />
+
+            <RadioButton
+                android:id="@+id/e2c_rad2"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Sit-up" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="0dp">
+
+            <RadioButton
+                android:id="@+id/e2c_rad3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Squats" />
+
+            <RadioButton
+                android:id="@+id/e2c_rad4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leg-lift" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="0dp">
+
+            <RadioButton
+                android:id="@+id/e2c_rad5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plank" />
+
+            <RadioButton
+                android:id="@+id/e2c_rad6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumping Jacks" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="0dp">
+
+            <RadioButton
+                android:id="@+id/e2c_rad7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pullup" />
+
+            <RadioButton
+                android:id="@+id/e2c_rad8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cycling" />
+        </TableRow>
+        <TableRow android:layout_marginTop="0dp">
+
+            <RadioButton
+                android:id="@+id/e2c_rad9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Walking" />
+
+            <RadioButton
+                android:id="@+id/e2c_rad10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jogging" />
+        </TableRow>
+        <TableRow android:layout_marginTop="0dp">
+
+            <RadioButton
+                android:id="@+id/e2c_rad11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swimming" />
+
+            <RadioButton
+                android:id="@+id/e2c_rad12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stair-Climbing" />
+        </TableRow>
+    </com.example.yanrongli.cs260a_p1.RadioGridGroup>
+
+    <TextView
+        android:id="@+id/e2c_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/e2c_radioGrid"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="0 cal"
+        android:textSize="32dp"
+        android:textColor="#ff0000"/>
+
+    <Button
+        android:id="@+id/e2c_calc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="LET'S BURN!"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_drawable"/>
+
+</RelativeLayout>
+</ScrollView>
